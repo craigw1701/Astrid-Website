@@ -46,6 +46,8 @@ div.navigation {
     width: 15%;
     height: 100%;
     margin: 0;
+    margin-left: 40px;
+    margin-right: 40px;
     padding: 0;
     position: fixed;
     box-sizing: border-box;
@@ -107,7 +109,7 @@ div.overlayBox {
 }
 
 div.overlayText {
-	background-color: #4CAF50;
+	background-color: #555;
 	color: white;
 	font-size: 16px;
 	padding: 16px 32px;
