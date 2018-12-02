@@ -12,10 +12,8 @@ h1 {
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
     font: 12px "avenir", sans-serif;
+    text-align: center;
 }
 
 li a {
@@ -42,21 +40,21 @@ img {
 }
 
 div.navigation {
-	min-width:  100px;
+    min-width: 120px;
     width: 15%;
     height: 100%;
     margin: 0;
-    margin-left: 40px;
-    margin-right: 40px;
     padding: 0;
     position: fixed;
     box-sizing: border-box;
-    overflow: auto;
+    overflow: scroll;
   	float: left;
+    display: block;
 }
 
 div.content {
-	padding-left: 20%;
+	margin-left: 20%;
+  float: left;
 	width: 75%;
 	/*background-color: green;*/
 }
@@ -113,4 +111,5 @@ div.overlayText {
 	color: white;
 	font-size: 16px;
 	padding: 16px 32px;
+  text-align: center;
 }
