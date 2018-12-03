@@ -1,11 +1,9 @@
-* {
+body{
 	box-sizing: border-box;
-    display: inline-block;
+    /*display: inline-block;*/
 }
 
-body {
 
-}
 
 h1 {
   font: 15px "avenir", sans-serif;
@@ -27,7 +25,7 @@ ul {
     top: 0;
 }
 
-li {	
+li {
 	width: 100%;
 }
 
@@ -48,7 +46,7 @@ li a:hover:not(.active) {
     color: white;
 }
 
-img {
+divpicture img {
 	display: block;
 	max-width: 100%;
 	height: auto;
@@ -78,13 +76,13 @@ div.content {
 }
 
 div.column1 {
-	width: 50%;
+	width: 60%;
 	float: left;
 	/*background-color: blue;*/
 }
 
 div.column2 {
-	width: 35%;
+	width: 40%;
 	float: left;
 	/*background-color: yellow;*/
 }
@@ -132,9 +130,19 @@ div.overlayText {
   text-align: center;
 }
 
+divicon {
+	padding: 5px;
+	display: block;
+	clear: right;
+}
 
-/* 
-	Events 
+divicon p {
+float: left;
+}
+
+
+/*
+	Events
 */
 @media screen and (max-width: 800px) {
     div.navigation {
@@ -144,33 +152,37 @@ div.overlayText {
         top: 0px;
         margin-bottom: 20px;
         margin-left: 0px;
-        box-sizing: border-box;  
+        box-sizing: border-box;
         background-color: white;
         padding-top: 4px;
         padding-bottom: 2px;
         padding-left: 20px;
+				padding-right: 20px;
     }
 
-    h1 {
+    /*h1 {
     	text-align: center;
-    }
+			margin: 0;
+    }*/
 
     li {
     	width: unset;
+			float:left;
     }
 
     div.content {
     	padding-top: 20px;
     	padding-left: 20px;
-    	width: 100%;
+			/*padding-right: 10%;*/
+    	width: 85%;
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
     div.column1 {
         float: none;
         width: 100%;
-    } 
+    }
 
     div.column2 {
         float: none;
