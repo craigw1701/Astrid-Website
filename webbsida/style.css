@@ -12,6 +12,19 @@ h1 {
   padding-bottom: 20px;
   letter-spacing: 3px;
   width: 100%;
+	text-decoration: none;
+}
+
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 ul {
@@ -100,6 +113,10 @@ div.icon p {
 	font-size: 13px;
 }
 
+span {
+	line-height: 1.2;
+}
+
 div.icon::after {
 	clear: both;
 }
@@ -154,6 +171,57 @@ div.overlayText {
 	font-family: 'Old Standard TT', serif;
 	padding: 16px 32px;
   text-align: center;
+}
+
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 40%;
+    margin: 2px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container {
+    position: relative;
+    display: none;
+		padding: 2px;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 12px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
 }
 
 

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Astrid Åhlén</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<!--body style="background-image:url('Flow_TV1.0_MAG0.01_WM1.3_LTtrue_BM0_HM50_BBfalse_T4646.jpg')"-->
+  <body>
+
+    <a href="index.html">
+      <h1>ASTRID ÅHLÉN</h1>
+    </a>
+
+    <div class="navigation">
+      <ul>
+       <li><a class="active" a="" href="index.html">portfolio</a></li>
+       <li><a href="about.html">about</a></li>
+       <li><a href="contact.html">contact</a></li>
+      </ul>
+    </div>
+
+<div class="content">
+  <div class="column1">
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+      </div>
+    </div>
+
+    <!-- The four columns -->
+<div class="column2">
+      <div class="row">
+        <div class="column">
+          <img src="day2ahousehighupinthesky.jpg" alt="a house high up in the sky" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="day3atree.jpg" alt="a tree" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="barndomsrum2.2.jpg" alt="barndomsrum" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="flickaochvargvinter.jpg" alt="vinter" style="width:100%" onclick="myFunction(this);">
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+
+    <script>
+    function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+    }
+    </script>
+
+  </body>
+</html>
