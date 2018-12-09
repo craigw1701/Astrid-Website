@@ -23,9 +23,45 @@
     </div>
 
     <div class="content">
+      <div class="column1">
+        <div class="container">
+            <img id="expandedImg" src="Flow_TV1.0_MAG0.01_WM1.3_LTtrue_BM0_HM50_BBfalse_T4646.jpg" alt="a house high up in the sky" style="width:100%">
+            <div id="imgtext">flow field using perlin noise</div>
+          </div>
+        </div>
+
+        <!-- The four columns -->
+    <div class="column2">
+          <div class="row">
+            <div class="column">
+              <img src="Flow_TV1.0_MAG0.01_WM1.3_LTtrue_BM0_HM50_BBfalse_T4646.jpg" alt="flow field using perlin noise" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="flow2.jpg" alt="flow field using perlin noise" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="flowfield.jpg" alt="flow field using perlin noise" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+            <video width="20%" controls>
+              <source src="Rocket_Portfolio.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            </div>
+          </div>
+          </div>
+        </div>
 
 
 
-    </div>
+        <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+        }
+        </script>
+
   </body>
 </html>
