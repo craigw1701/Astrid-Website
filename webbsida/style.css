@@ -187,6 +187,7 @@ div.overlayText {
 .column img {
     opacity: 0.8;
     cursor: pointer;
+		margin-bottom: 4px
 }
 
 .column img:hover {
@@ -215,6 +216,19 @@ div.overlayText {
     color: white;*/
 		font-family: "avenir", sans-serif;
     font-size: 12px;
+}
+
+.footer {
+	display: inline-block;
+	width: 95%;
+	height: 10%;
+	/*background-color: #e0e0e0;*/
+	margin: 5%;
+	margin-top: 50px;
+	text-align: center;
+	border-top: 1px solid #dbd9d4;
+
+
 }
 
 /*
