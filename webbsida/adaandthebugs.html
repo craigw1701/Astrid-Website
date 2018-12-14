@@ -25,8 +25,12 @@
     <div class="content">
       <div class="column1">
         <div class="container">
-            <img id="expandedImg" src="pressimagea5.jpg" alt="a house high up in the sky" style="width:100%">
-            <div id="imgtext">ada and the bugs is a video game about programming aimed at girls</div>
+            <!--<img id="expandedImg" src="pressimagea5.jpg" alt="a house high up in the sky" style="width:100%">-->
+            <video id="videoID" width="100%" controls>
+              <source id="videoSource" src="spelvideo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div id="imgtext">ada and the bugs is a video game about programming aimed at girls, made in collaboration with a programmer</div>
           </div>
         </div>
 
@@ -34,20 +38,22 @@
     <div class="column2">
           <div class="row">
             <div class="column">
-              <img src="pressimagea5.jpg" alt="ada and the bugs is a video game about programming aimed at girls" style="width:100%" onclick="myFunction(this);">
-              <img src="Gracehopper.jpg" alt="Grace Hopper" style="width:100%" onclick="myFunction(this);">
-              <img src="IMG_5005.jpg" alt="the game was tested with three girls from Geek Girl Mini" style="width:100%" onclick="myFunction(this);">
+              <img src="game_Thumbnail.jpg" alt="video of gameplay" style="width:100%" onclick="setVideo(this, 'spelvideo.mp4');">
+              <img src="ada_Cover.jpg" alt="ada and the bugs is a video game about programming aimed at girls" style="width:100%" onclick="myFunction(this);">
+              <img src="gracehopper.jpg" alt="Grace Hopper" style="width:100%" onclick="myFunction(this);">
+
             </div>
             <div class="column">
-              <img src="infographics_research1.jpg" alt="research" style="width:100%" onclick="myFunction(this);">
+              <img src="infographics_research.jpg" alt="research" style="width:100%" onclick="myFunction(this);">
               <img src="annieeastley.jpg" alt="Annie Eastley" style="width:100%" onclick="myFunction(this);">
               <img src="coordinatespuzzle.jpg" alt="still from the game" style="width:100%" onclick="myFunction(this);">
             </div>
             <div class="column">
               <img src="margarethamilton.jpg" alt="The game includes illustrations of important female programmers from history" style="width:100%" onclick="myFunction(this);">
-              <img src="adalovelace8.jpg" alt="Ada Lovelace" style="width:100%" onclick="myFunction(this);">
+              <img src="adalovelace.jpg" alt="Ada Lovelace" style="width:100%" onclick="myFunction(this);">
+              <img src="testing.jpg" alt="the game was tested with three girls from Geek Girl Mini" style="width:100%" onclick="myFunction(this);">
             </div>
-        
+
 
           </div>
           </div>
@@ -59,7 +65,21 @@
         function myFunction(imgs) {
             var expandImg = document.getElementById("expandedImg");
             var imgText = document.getElementById("imgtext");
+            var video = document.getElementById("videoID");
+            video.pause();
+            expandImg.style.display = "block";
+            video.style.display = "none";
             expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+        }
+
+        function setVideo(imgs, videoSrc) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            var video = document.getElementById("videoID");
+            video.src = videoSrc;
+            expandImg.style.display = "none";
+            video.style.display = "block";
             imgText.innerHTML = imgs.alt;
         }
         </script>

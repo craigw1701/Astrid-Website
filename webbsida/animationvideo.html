@@ -23,6 +23,54 @@
     </div>
 
     <div class="content">
+      <div class="content">
+        <div class="column1">
+          <div class="container">
+              <video id="videoID" width="100%" controls>
+                <source id="videoSource" src="titlesequence.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div id="imgtext">title sequence in after effects</div>
+            </div>
+          </div>
+
+      <div class="column2">
+            <div class="row">
+              <div class="column">
+                <img src="titlesequence_Thumbnail.jpg" alt="title sequence in after effects" style="width:100%" onclick="setVideo(this, 'titlesequence.mp4');">
+              </div>
+              <div class="column">
+
+              </div>
+              <div class="column">
+
+              </div>
+            </div>
+            </div>
+          </div>
+
+          <script>
+          function myFunction(imgs) {
+              var expandImg = document.getElementById("expandedImg");
+              var imgText = document.getElementById("imgtext");
+              var video = document.getElementById("videoID");
+              video.pause();
+              expandImg.style.display = "block";
+              video.style.display = "none";
+              expandImg.src = imgs.src;
+              imgText.innerHTML = imgs.alt;
+          }
+
+          function setVideo(imgs, videoSrc) {
+              var expandImg = document.getElementById("expandedImg");
+              var imgText = document.getElementById("imgtext");
+              var video = document.getElementById("videoID");
+              video.src = videoSrc;
+              expandImg.style.display = "none";
+              video.style.display = "block";
+              imgText.innerHTML = imgs.alt;
+          }
+          </script>
 
 
 

@@ -25,7 +25,11 @@
     <div class="content">
       <div class="column1">
         <div class="container">
-            <img id="expandedImg" src="Flow_TV1.0_MAG0.01_WM1.3_LTtrue_BM0_HM50_BBfalse_T4646.jpg" alt="a house high up in the sky" style="width:100%">
+            <img id="expandedImg" src="Flow_1.jpg" alt="a house high up in the sky" style="width:100%">
+            <video id="videoID" width="100%" style="display:none" controls>
+              <source id="videoSource" src="rocket.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
             <div id="imgtext">flow field using perlin noise</div>
           </div>
         </div>
@@ -33,13 +37,14 @@
     <div class="column2">
           <div class="row">
             <div class="column">
-              <img src="Flow_TV1.0_MAG0.01_WM1.3_LTtrue_BM0_HM50_BBfalse_T4646.jpg" alt="flow field using perlin noise" style="width:100%" onclick="myFunction(this);">
+              <img src="Flow_1.jpg" alt="flow field using perlin noise" style="width:100%" onclick="myFunction(this);">
+              <img src="rocket_Thumbnail.jpg" alt="the dot's acceleration and movement is controled by the music" style="width:100%" onclick="setVideo(this, 'rocket.mp4');">
             </div>
             <div class="column">
-              <img src="flow2.jpg" alt="flow field using perlin noise" style="width:100%" onclick="myFunction(this);">
+              <img src="flow_2.jpg" alt="flow field using perlin noise" style="width:100%" onclick="myFunction(this);">
             </div>
             <div class="column">
-              <img src="flowfield.jpg" alt="flow field using perlin noise" style="width:100%" onclick="myFunction(this);">
+              <img src="flow_3.jpg" alt="flow field using perlin noise" style="width:100%" onclick="myFunction(this);">
             </div>
           </div>
           </div>
@@ -49,7 +54,21 @@
         function myFunction(imgs) {
             var expandImg = document.getElementById("expandedImg");
             var imgText = document.getElementById("imgtext");
+            var video = document.getElementById("videoID");
+            video.pause();
+            expandImg.style.display = "block";
+            video.style.display = "none";
             expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+        }
+
+        function setVideo(imgs, videoSrc) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            var video = document.getElementById("videoID");
+            video.src = videoSrc;
+            expandImg.style.display = "none";
+            video.style.display = "block";
             imgText.innerHTML = imgs.alt;
         }
         </script>

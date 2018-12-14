@@ -31,6 +31,7 @@ ul {
     list-style-type: none;
     font: 12px "avenir", sans-serif;
     text-align: center;
+		letter-spacing: 1px;
     margin: 0;
     padding: 0;
     position: -webkit-sticky;
