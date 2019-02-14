@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Astrid Åhlén</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+    <a href="index.html">
+      <h1>ASTRID ÅHLÉN</h1>
+    </a>
+
+    <div class="navigation">
+      <nav>
+        <ul>
+         <li><a class="active" a href="index.html">portfolio</a></li>
+         <li><a href="about.html">about</a></li>
+         <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="content">
+      <div class="column1">
+        <div class="container">
+            <img id="expandedImg" src="detremusketöserna_Ebook3.jpg" alt="de tre musketöserna" style="width:100%">
+            <div id="imgtext">de tre musketöserna</div>
+          </div>
+        </div>
+
+        <!-- The four columns -->
+    <div class="column2">
+          <div class="row">
+            <div class="column">
+              <img src="detremusketöserna_Ebook3.jpg" alt="de tre musketöserna" style="width:100%" onclick="myFunction(this);">
+              <img src="häristaden_Ebook.jpg" alt="här i staden" style="width:100%" onclick="myFunction(this);">
+              <img src="moltovilldansa_Ebook.jpg" alt="molto vill dansa" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="lejonpåstan_Ebook.jpg" alt="lejon på stan" style="width:100%" onclick="myFunction(this);">
+              <img src="lejonundersängen_Ebook.jpg" alt="lejon under sängen" style="width:100%" onclick="myFunction(this);">
+              <img src="detremusketösernaslårtill_Ebook3.jpg" alt="de tre musketöserna slår till" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="jyckepårymmenebook.jpg" alt="jycke på rymmen" style="width:100%" onclick="myFunction(this);">
+              <img src="rock-sussie_Ebook.jpg" alt="rock-sussie" style="width:100%" onclick="myFunction(this);">
+            </div>
+          </div>
+          </div>
+        </div>
+
+
+
+        <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+        }
+        </script>
+
+  </body>
+</html>
